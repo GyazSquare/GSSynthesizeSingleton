@@ -29,12 +29,26 @@
     XCTAssertNotNil(sharedARCObject);
     // shared
     XCTAssertEqualObjects(sharedARCObject, [GSARCObject sharedARCObject]);
-    // copy
-    XCTAssertEqualObjects(sharedARCObject, [sharedARCObject copy]);
+    // background
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    NSInteger count = 100;
+    while (count-- > 0) {
+        XCTestExpectation *expectation = [self expectationWithDescription:@"background"];
+        dispatch_async(queue, ^{
+            XCTAssertEqualObjects(sharedARCObject, [GSARCObject sharedARCObject]);
+            [expectation fulfill];
+        });
+    }
+    [self waitForExpectationsWithTimeout:1 handler:^(NSError *error) {
+        if (error) {
+            XCTFail(@"%@", error);
+        }
+    }];
 }
 
-- (void)testSharedARCObjectAsync {
-    // TODO
+- (void)testCopy {
+    GSARCObject *sharedARCObject = [GSARCObject sharedARCObject];
+    XCTAssertEqualObjects(sharedARCObject, [sharedARCObject copy]);
 }
 
 @end
