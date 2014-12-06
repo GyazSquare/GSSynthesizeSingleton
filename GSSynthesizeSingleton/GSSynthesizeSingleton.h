@@ -21,6 +21,10 @@
 \
 + (instancetype)allocWithZone:(struct _NSZone *)zone {\
     return nil;\
+}\
+\
+- (id)copyWithZone:(struct _NSZone *)zone {\
+    return self;\
 }
 #else
 #define GSSynthesizeSingleton(prefix, className) \
