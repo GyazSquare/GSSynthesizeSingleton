@@ -1,0 +1,3 @@
+language: objective-c
+xcode_project: SingletonDemo/SingletonDemo.xcodeproj
+xcode_scheme: SingletonDemoTests
