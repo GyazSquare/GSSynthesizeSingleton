@@ -1,6 +1,6 @@
 GSSynthesizeSingleton
 =====================
-[![Build Status](https://travis-ci.org/gooichi/GSSynthesizeSingleton.svg?branch=master)](https://travis-ci.org/gooichi/GSSynthesizeSingleton)
+[![Build Status](https://travis-ci.org/GyazSquare/GSSynthesizeSingleton.svg?branch=master)](https://travis-ci.org/GyazSquare/GSSynthesizeSingleton)
 
 GSSynthesizeSingleton is a simple macro to synthesize the methods for an Objective-C singleton class.
 
