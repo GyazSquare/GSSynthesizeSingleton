@@ -46,6 +46,10 @@
     }];
 }
 
+- (void)testNew {
+    XCTAssertNil([GSNonARCObject new]);
+}
+
 - (void)testCopy {
     GSNonARCObject *sharedNonARCObject = [GSNonARCObject sharedNonARCObject];
     XCTAssertEqualObjects(sharedNonARCObject, [sharedNonARCObject copy]);
