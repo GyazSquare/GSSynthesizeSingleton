@@ -46,6 +46,10 @@
     }];
 }
 
+- (void)testNew {
+    XCTAssertNil([GSARCObject new]);
+}
+
 - (void)testCopy {
     GSARCObject *sharedARCObject = [GSARCObject sharedARCObject];
     XCTAssertEqualObjects(sharedARCObject, [sharedARCObject copy]);
