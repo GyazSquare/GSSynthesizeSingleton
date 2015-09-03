@@ -4,7 +4,36 @@ GSSynthesizeSingleton
 
 GSSynthesizeSingleton is a simple macro to synthesize the methods for an Objective-C singleton class.
 
+## Requirements
+
+* Xcode 7 or later
+* Base SDK: iOS 9 / OS X 10.11 or later
+
 ## Installation
+
+### CocoaPods
+
+Add the pod to your `Podfile`:
+
+```ruby
+# ... snip ...
+
+pod 'GSSynthesizeSingleton'
+```
+
+Install the pod:
+
+```sh
+$ pod install
+```
+
+### Source
+
+Check out the source:
+
+```sh
+$ git clone https://github.com/GyazSquare/GSSynthesizeSingleton.git
+```
 
 Copy GSSynthesizeSingleton.h into your project.
 
