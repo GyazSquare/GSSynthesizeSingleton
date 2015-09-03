@@ -1,4 +1,5 @@
 language: objective-c
+osx_image: xcode7
 xcode_project: SingletonDemo/SingletonDemo.xcodeproj
 xcode_scheme: SingletonDemo
 xcode_sdk: iphonesimulator
