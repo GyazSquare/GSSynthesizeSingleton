@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT' }
   s.author       = 'GyazSquare'
   s.source       = { :git => 'https://github.com/GyazSquare/GSSynthesizeSingleton.git', :tag => '2.0.0' }
-  s.source_files = 'GSSynthesizeSingleton/*.{h,m}'
+  s.watchos.deployment_target = '2.0'
   s.requires_arc = true
+  s.source_files = 'GSSynthesizeSingleton/*.{h,m}'
 end
