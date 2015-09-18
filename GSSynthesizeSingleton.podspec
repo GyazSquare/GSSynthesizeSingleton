@@ -9,6 +9,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '2.0'
   s.osx.deployment_target = '10.0'
   s.watchos.deployment_target = '2.0'
-  s.requires_arc = true
   s.source_files = 'GSSynthesizeSingleton/*.{h,m}'
 end
