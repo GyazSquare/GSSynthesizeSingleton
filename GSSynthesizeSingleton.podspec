@@ -6,8 +6,8 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/GyazSquare/GSSynthesizeSingleton'
   s.source       = { :git => 'https://github.com/GyazSquare/GSSynthesizeSingleton.git', :tag => '2.0.5' }
   s.summary      = 'A simple macro for an Objective-C singleton class.'
-  s.ios.deployment_target = '2.0'
-  s.osx.deployment_target = '10.0'
+  s.ios.deployment_target = '4.0'
+  s.osx.deployment_target = '10.6'
   s.watchos.deployment_target = '2.0'
   s.source_files = 'GSSynthesizeSingleton/*.{h,m}'
 end
