@@ -6,8 +6,8 @@ GSSynthesizeSingleton is a simple macro to synthesize the methods for an Objecti
 
 ## Requirements
 
-* Xcode 7.2 or later
-* Base SDK: iOS 9.2 / OS X 10.11 / watchOS 2.1 / tvOS 9.1 or later
+* Xcode 7.3 or later
+* Base SDK: iOS 9.3 / OS X 10.11 / watchOS 2.2 / tvOS 9.2 or later
 
 ## Installation
 
