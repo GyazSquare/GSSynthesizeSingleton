@@ -6,3 +6,6 @@ before_script:
   - set -o pipefail
 script:
   - xcodebuild -project SingletonDemo/SingletonDemo.xcodeproj -scheme SingletonDemo -destination 'platform=iOS Simulator,name=iPhone 6s' -sdk iphonesimulator test | xcpretty -c
+notifications:
+  slack:
+    secure: uS63dBYuYpPAkt/T5ayDp1IcUCxDYdO+rYP2pFHD518PhfOpEYOAiNVCbIEqaU9zCYGBRj6ww6eJDZ47PSBK0PF43M9rNXRvmcd4iDCZPrTPlBqWJp1+Mw48kiO+5XeWygQ3wd27vAMz6bNV22P+ap6/c6pKVBWSuo/9yYg2PkI=
